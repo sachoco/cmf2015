@@ -1,0 +1,35 @@
+/*
+
+Theme Name: CMF2015 : X &ndash; Child Theme
+Theme URI: 
+Author: Satoshi Shiraishi
+Author URI: 
+Description: 
+Version: 1.0.0
+Template: x
+
+*/
+
+body {
+	background-color : #FBF9F3; 
+	color : #323232; 
+	font-size: 14px ;
+	font-family: "Kozuka Mincho Pro", "Kozuka Mincho Std", "小塚明朝 Pro R", "小塚明朝 Std R", "游明朝", YuMincho, "HG明朝E", "メイリオ", Meiryo, serif;
+	/*font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, sans-serif;*/
+}  
+
+.art01 {
+	display : block ;
+	margin : auto ;
+}
+
+.home p { 
+	text-align : center;  
+
+}
+
+a:link { color: #D81010; }
+a:hover { color: #551010; }
+
+.copyrights { height: auto; width: auto; }
+.copyrights p { text-align: right; }
