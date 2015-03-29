@@ -14,7 +14,7 @@ body {
 	background-color : #FBF9F3; 
 	color : #323232; 
 	font-size: 14px ;
-	font-family: "Kozuka Mincho Pro", "Kozuka Mincho Std", "小塚明朝 Pro R", "小塚明朝 Std R", "游明朝", YuMincho, "HG明朝E", "メイリオ", Meiryo, serif;
+	font-family: "Kozuka Mincho Pro", "Kozuka Mincho Std", "小塚明朝 Pro R", "小塚明朝 Std R", "游明朝", "YuMincho", "HG明朝E", "メイリオ", "Meiryo", "serif";
 	/*font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, sans-serif;*/
 }  
 
@@ -28,8 +28,119 @@ body {
 
 }
 
-a:link { color: #D81010; }
+a:link { color: #b24b4c; }
 a:hover { color: #551010; }
 
 .copyrights { height: auto; width: auto; }
 .copyrights p { text-align: right; }
+
+.x-logobar .x-container {
+/* 	text-align: left; */
+}
+
+.x-logobar .x-container >a, .x-logobar .x-container div{
+	float: left;
+}
+.x-logobar .x-container >a {
+	width: 85%;
+}
+.x-logobar .x-container .date-place {
+	margin-top: 16px;
+	width: 25%;
+}
+.x-logobar .x-container .socials {
+	width: 15%;
+	float: right;
+	text-align: right;
+	margin-top: 35px;
+}
+.x-logobar .x-container .socials >a {
+	display: inline-block;
+	margin-bottom: 3px;
+	font-size: 21px;
+	font-size: 2.1rem;
+	line-height: 40px;
+	text-align: center;
+	color: white;//#28323f;
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 100em;
+	margin: 0 1.25%;
+	width: 40px;
+	height: 40px;
+}
+.x-logobar .x-container .socials >a:hover.facebook {
+  background-color: #3b5998;
+}
+.x-logobar .x-container .socials >a:hover.twitter {
+  background-color: #00abf0;
+}
+.x-landmark h1 {
+	font-family: "游明朝","YuMincho","Hiragino Mincho ProN","Hiragino Mincho Pro","メイリオ","Meiryo","ＭＳ 明朝",serif;
+	color: #b24b4c;
+}
+.location img {
+	margin: 0;
+}
+
+.concert .entry-info {
+  float: left;
+  width: 64%;
+}
+
+.concert .entry-extra {
+  float: right;
+  width: 32%;
+  border: 2px solid #e5e5e5;
+  padding: 25px;
+  font-size: 114.2%;
+}
+
+.single-concert .entry-featured {
+  margin: 0;
+}
+
+.single-concert .entry-header {
+  margin-top: 5%;
+}
+
+
+@media (max-width: 767px){
+	.x-logobar .x-container >a {
+		width: 100%;
+	}
+	.x-logobar .x-container .date-place {
+		width: 25%;
+	}
+	.x-logobar .x-container .socials {
+		display: none;
+	}
+	
+}
+
+
+/*---------------- TOROKO ----------------*/
+
+/* List-Styles */
+
+ul.none { list-style-type : none ;
+}
+
+/*--- Concert Page List Items ---*/
+
+li.concert-list { font-weight : bold ; font-size : large ;
+}
+li.concert-list p { display : none ;
+}
+li.concert-list ul { font-weight : normal ; font-size : 14px ; list-style-type: circle; text-indent: 0 ; margin-left : 4px ;
+}
+li.concert-list li { line-height : 150% ; margin-bottom : 5px ;
+}
+li.concert-list li:last-child { margin-bottom : 15px ;
+}
+
+/*--- FAQ accordions ---*/
+
+.faq li { font-weight : bold ; list-style-type : disc ; margin : 10px 0px ;
+}
+.faq li li { font-weight : normal ; list-style-type: none ; margin : 0px 5px 0px -10px ; line-height : 150% ;
+}
